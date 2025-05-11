@@ -1,0 +1,68 @@
+# OSによる不要ファイル
+.DS_Store
+Thumbs.db
+
+# Node modules
+/node_modules/
+
+# Composer dependencies
+/vendor/
+
+# Laravel 環境ファイル
+.env
+.env.backup
+.env.production
+.env.local
+
+# Laravel キャッシュファイル
+/bootstrap/cache/*.php
+
+# Laravel storage ディレクトリ（必要なディレクトリは除外から戻す）
+/storage/*
+!/storage/app/
+!/storage/app/public/
+!/storage/framework/
+!/storage/framework/cache/
+!/storage/framework/cache/data/
+!/storage/framework/sessions/
+!/storage/framework/views/
+!/storage/logs/
+
+# Laravel log, debug, session, compiled views
+*.log
+*.bak
+*.tmp
+*.swp
+.phpunit.result.cache
+
+# Laravel public ディレクトリのビルドファイル（Vite, Mix 等）
+/public/build/
+/public/hot
+/public/storage
+
+# npm / Yarn ログ
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Laravel Telescope（使っていれば）
+/storage/telescope
+
+# Laravel Horizon（使っていれば）
+horizon.log
+
+# IDE / エディタ関連
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# その他ビルドやデプロイ関連
+*.zip
+*.gz
+*.tar
+*.tgz
+
+# AWS 関連秘密鍵など（誤って追加した場合の防止）
+*.pem
+aws_code.zip
