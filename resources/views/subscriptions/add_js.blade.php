@@ -12,6 +12,11 @@
         // subscription新規保存
         $(document).on('click','.add_subscription', function(e){
             e.preventDefault();
+
+            const $btn = $(this);
+            // 重複登録防止のためボタンを一時的に無効化
+            $btn.prop('disabled', true);
+
             let user_id = {{ Auth::user()->id }};
             let title = $('#title').val();
             let price = $('#price').val();
@@ -91,6 +96,9 @@
                 $.each(error.responseJSON.errors, function(index, value){
                     $('.errMsgContainer').append('<span class="text-pink-600">'+value+'</span><br>');
                 });
+            // Ajax終了後にボタンを有効化
+            }).always(function(){
+                $btn.prop('disabled', false);
             });
 
             // クローズボタンがクリックされたら、バリデーションエラーを削除

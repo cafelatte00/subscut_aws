@@ -32,6 +32,21 @@ class SubscriptionController extends Controller
         $firstPaymentDay = Carbon::parse($request->first_payment_day); // 初回支払日
         $frequency = $request->frequency;
 
+        // 重複チェック（５秒以内、全く同じ内容）
+        $duplicate = Subscription::where('user_id', $user->id)
+            ->where('title', $request->title)
+            ->where('price', $request->price)
+            ->where('frequency', $frequency)
+            ->where('first_payment_day', $firstPaymentDay)
+            ->where('created_at', '>=', now()->subSeconds(5))
+            ->exists();
+
+        if($duplicate){
+            return response()->json([
+                'error' => '同じサブスクが既に登録されています。'
+            ], 409);  // Conflict
+        }
+
         $paymentDetails =CheckSubscriptionService::calculatePaymentDetails($firstPaymentDay, $frequency);
 
         Subscription::create([
