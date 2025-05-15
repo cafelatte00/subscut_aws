@@ -5,6 +5,8 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use App\Models\Subscription;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class UpdateSubscription extends Command
 {
@@ -36,13 +38,36 @@ class UpdateSubscription extends Command
     {
         $today = Carbon::today();
         $subscriptions = Subscription::whereDate('next_payment_day', $today)->get();
-        foreach($subscriptions as $subscription){
-            $subscription->next_payment_day = Carbon::parse($subscription->next_payment_day)->addMonthNoOverflow($subscription->frequency);
-            $subscription->increment('number_of_payments');
-            $subscription->save();
-            $this->info("Subscription ID {$subscription->id}を更新しました。");
+
+        if($subscriptions->isEmpty()) {
+            $this->info('本日更新するSubscriptionはありません。');
+            Log::info('UpdateSubscriptionバッチ：本日更新対象なし。');
+            return Command::SUCCESS;
         }
-        $this->info('処理が終了しました。');
+
+        Log::info("UpdateSubscriptionバッチ：対象件数 = {$subscriptions->count()}");
+
+        DB::beginTransaction();
+
+        try {
+            foreach($subscriptions as $subscription){
+                $subscription->next_payment_day = Carbon::parse($subscription->next_payment_day)->addMonthNoOverflow($subscription->frequency);
+                $subscription->number_of_payments += 1;
+                $subscription->save();
+                $this->info("Subscription ID {$subscription->id}を更新しました。");
+            }
+            DB::commit();
+            $this->info('処理が終了しました。');
+            Log::info('UpdateSubscriptionバッチが正常に完了しました。');
+        } catch (\Exception $e) {
+            DB::rollBack();
+            $this->error("エラーが発生しました：" . $e->getMessage());
+            Log::error('UpdateSubscriptionバッチでエラーが発生', [
+                'message' => $e->getMessage(),
+                'trace' => $e->getTraceAsString()
+            ]);
+        }
+
         return Command::SUCCESS;    // 省略可能
     }
 }
