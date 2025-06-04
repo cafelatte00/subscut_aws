@@ -32,9 +32,8 @@
 
 | 項目 | 内容 |
 |------|------|
-| フレームワーク | Laravel 9 |
-| 言語 | PHP 8 / JavaScript |
-| フロント | jQuery / Chart.js |
+| バックエンド | PHP 8 / Laravel 9 |
+| フロントエンド | JavaScript / jQuery / Chart.js |
 | データベース | MySQL |
+| メールサーバー | Gmail SMTP |
 | インフラ | AWS（EC2 / RDS / S3 / Route 53 / ACM / IAM） |
-| ウェブサーバー | Apache |
