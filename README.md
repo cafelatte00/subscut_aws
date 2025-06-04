@@ -3,7 +3,7 @@
 個人開発で作成した、**サブスクリプション管理アプリ**です。
 毎月の支出を可視化し、ムダなサブスクを見直す手助けをします。
 
-解説記事（Qiita）: [【ポートフォリオ】Laravel + AWS + jQueryで構築したサブスク管理アプリ「SubsCut」の解](https://qiita.com/latte00/items/60d2d44e81b73f1f48c7)
+解説記事（Qiita）: [【ポートフォリオ】Laravel + AWS + jQueryで構築したサブスク管理アプリ「SubsCut」の解説](https://qiita.com/latte00/items/60d2d44e81b73f1f48c7)
 
 ---
 
@@ -22,7 +22,7 @@
 - サブスクの登録・一覧表示・詳細表示・編集・削除（登録はAjax）
 - 月額支出のグラフ表示（Chart.js）
 - アイコン画像のアップロード・削除（Amazon S3）
-- メール通知機能（Gmail）
+- メール通知機能（Gmail SMTP）
 - 日次バッチ処理による状態自動更新
 - レスポンシブ対応（スマホ表示OK）
 
@@ -34,7 +34,7 @@
 |------|------|
 | フレームワーク | Laravel 9 |
 | 言語 | PHP 8 / JavaScript |
-| フロント | jQuery / Chart.js / Bootstrap |
+| フロント | jQuery / Chart.js |
 | データベース | MySQL |
-| インフラ | AWS（EC2 / RDS / S3 / SES） |
+| インフラ | AWS（EC2 / RDS / S3 / Route 53 / ACM / IAM） |
 | ウェブサーバー | Apache |
