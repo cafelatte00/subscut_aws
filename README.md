@@ -34,6 +34,5 @@
 |------|------|
 | バックエンド | PHP 8 / Laravel 9 |
 | フロントエンド | JavaScript / jQuery / Chart.js |
-| データベース | MySQL |
 | メールサーバー | Gmail SMTP |
-| インフラ | AWS（EC2 / RDS / S3 / Route 53 / ACM / IAM） |
+| インフラ | AWS（EC2 / RDS[MySQL] / S3 / Route 53 / ACM / IAM） |
