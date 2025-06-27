@@ -39,9 +39,9 @@
 
 ---
 
-## サブスクリプション支出チャート機能（API + Chart.js）
+## サブスク支出チャート機能（API + Chart.js）
 
-月ごとのサブスクリプション支出を集計し、Chart.jsで可視化する機能を実装しました。  
+月ごとのサブスク支出を集計し、Chart.jsで可視化する機能を実装しました。  
 Laravel側では、REST API形式で集計データをJSONレスポンスとして返却し、JavaScriptから非同期で取得しています。
 
 - `GET /subscriptions/chart-data`：月別支出を返すAPI
