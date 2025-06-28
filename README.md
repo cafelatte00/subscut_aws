@@ -3,7 +3,9 @@
 個人開発で作成した、**サブスク管理アプリ**です。
 毎月の支出を可視化し、ムダなサブスクを見直す手助けをします。
 
-解説記事（Qiita）: [【ポートフォリオ】Laravel + AWS + jQueryで構築したサブスク管理アプリ「SubsCut」の解説](https://qiita.com/latte00/items/60d2d44e81b73f1f48c7)
+解説記事（Qiita）:
+画像付きの説明なので、アプリを実際に使用せず概要を掴んでいただけます。
+[【ポートフォリオ】Laravel + AWS + jQueryで構築したサブスク管理アプリ「SubsCut」の解説](https://qiita.com/latte00/items/60d2d44e81b73f1f48c7)
 
 ---
 
