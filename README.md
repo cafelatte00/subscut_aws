@@ -9,7 +9,6 @@
 画像付きの説明で、アプリを使用せず概要を掴んでいただけます。  
 [【ポートフォリオ】Laravel + AWS + jQueryで構築したサブスク管理アプリ「SubsCut」の解説](https://qiita.com/latte00/items/60d2d44e81b73f1f48c7)
 
-
 ---
 
 ##  『ゲストログイン』ボタンを押すと、メール登録なしで、アプリにログイン！  
@@ -19,6 +18,8 @@
 トップページ左下の「ゲストログイン」ボタンを押すと、メールアドレス登録不要ですぐにお試しできます。  
 
 <img width="416" alt="Image" src="https://github.com/user-attachments/assets/2c9c9587-ca94-48f7-a298-7972ce66f74a" />
+
+
 ---
 
 ##  主な機能
