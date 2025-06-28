@@ -37,7 +37,7 @@
 | バックエンド | PHP 8 / Laravel 9 （REST API実装）|
 | フロントエンド | JavaScript / jQuery / Chart.js （API連携によるグラフ表示）|
 | バッチ処理     | Laravel Scheduler + Cron（EC2上で定期実行）
-| メールサーバー | Gmail SMTP （課金リマインド通知）|
+| メールサーバー | Gmail SMTP |
 | インフラ | AWS（EC2 / RDS[MySQL] / S3 / Route 53 / ACM / IAM） |
 
 ---
