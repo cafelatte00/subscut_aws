@@ -1,5 +1,5 @@
 # SubsCut 〜サブスカット〜（サブスク管理アプリ）
-
+<img width="1453" alt="Image" src="https://github.com/user-attachments/assets/20ef089c-5d1b-44d7-9bff-dc34ed981c40" />
 個人開発で作成した、**サブスク管理アプリ**です。
 毎月の支出を可視化し、ムダなサブスクを見直す手助けをします。
 
