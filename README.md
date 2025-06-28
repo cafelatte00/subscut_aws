@@ -1,11 +1,11 @@
 # SubsCut 〜サブスカット〜（サブスク管理アプリ）
+個人開発で作成した、サブスク管理アプリです。毎月の支出を可視化し、ムダなサブスクを見直す手助けをします。  
 [https://subscut.site/](https://subscut.site/)
 
 <img width="1456" alt="Image" src="https://github.com/user-attachments/assets/83e53cf0-dbfa-4f72-9f9f-71ecf7ff8732" />
-個人開発で作成した、** サブスク管理アプリ **です。
-毎月の支出を可視化し、ムダなサブスクを見直す手助けをします。
 
-#### 解説記事（Qiita）
+
+### 解説記事（Qiita）
 画像付きの説明で、アプリを使用せず概要を掴んでいただけます。  
 [【ポートフォリオ】Laravel + AWS + jQueryで構築したサブスク管理アプリ「SubsCut」の解説](https://qiita.com/latte00/items/60d2d44e81b73f1f48c7)
 
