@@ -17,7 +17,7 @@
 [https://subscut.site/](https://subscut.site/)
 
 トップページ左下の「ゲストログイン」ボタンを押すと、メールアドレス登録不要ですぐにお試しできます。
-
+<img width="416" alt="Image" src="https://github.com/user-attachments/assets/2c9c9587-ca94-48f7-a298-7972ce66f74a" />
 ---
 
 ##  主な機能
