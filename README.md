@@ -44,7 +44,7 @@
 月ごとのサブスク支出を集計し、Chart.jsで可視化する機能を実装しました。  
 Laravel側では、REST API形式で集計データをJSONレスポンスとして返却し、JavaScriptから非同期で取得しています。
 
-- `GET /subscriptions/chart-data`：月別支出を返すAPI
-- `/subscriptions/chart`：Chart.jsによるグラフ描画ビュー
+- GET `/subscriptions/chart-data`：月別支出を返すAPI**REST APIエンドポイント**
+- `/subscriptions/chart`：Chart.jsによるグラフ描画用の**画面ビュー**
 - 支出のない月は0円で補完、最大24ヶ月分を表示
 
