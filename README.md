@@ -5,8 +5,10 @@
 <img width="1456" alt="Image" src="https://github.com/user-attachments/assets/83e53cf0-dbfa-4f72-9f9f-71ecf7ff8732" />
 
 
+
+
 ### 解説記事（Qiita）
-画像付きの説明で、アプリを使用せず概要を掴んでいただけます。  
+画像を用いて、機能や画面のイメージをご紹介しています。
 [【ポートフォリオ】Laravel + AWS + jQueryで構築したサブスク管理アプリ「SubsCut」の解説](https://qiita.com/latte00/items/60d2d44e81b73f1f48c7)
 
 ---
