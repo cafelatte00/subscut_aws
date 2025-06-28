@@ -1,5 +1,5 @@
 # SubsCut 〜サブスカット〜（サブスク管理アプリ）
-<img width="1453" alt="Image" src="https://github.com/user-attachments/assets/20ef089c-5d1b-44d7-9bff-dc34ed981c40" />
+<img width="1456" alt="Image" src="https://github.com/user-attachments/assets/83e53cf0-dbfa-4f72-9f9f-71ecf7ff8732" />
 個人開発で作成した、**サブスク管理アプリ**です。
 毎月の支出を可視化し、ムダなサブスクを見直す手助けをします。
 
@@ -43,7 +43,7 @@
 ---
 
 ## サブスク支出チャート機能（API + Chart.js）
-
+<img width="1453" alt="Image" src="https://github.com/user-attachments/assets/20ef089c-5d1b-44d7-9bff-dc34ed981c40" />
 月ごとのサブスク支出を集計し、Chart.jsで可視化する機能を実装しました。  
 Laravel側では、REST API形式で集計データをJSONレスポンスとして返却し、JavaScriptから非同期で取得しています。
 
