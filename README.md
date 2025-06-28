@@ -2,7 +2,7 @@
 [https://subscut.site/](https://subscut.site/)
 
 <img width="1456" alt="Image" src="https://github.com/user-attachments/assets/83e53cf0-dbfa-4f72-9f9f-71ecf7ff8732" />
-個人開発で作成した、<b>サブスク管理アプリ</b>です。
+個人開発で作成した、** サブスク管理アプリ **です。
 毎月の支出を可視化し、ムダなサブスクを見直す手助けをします。
 
 #### 解説記事（Qiita）
@@ -17,6 +17,7 @@
 [https://subscut.site/](https://subscut.site/)  
 
 トップページ左下の「ゲストログイン」ボタンを押すと、メールアドレス登録不要ですぐにお試しできます。  
+
 <img width="416" alt="Image" src="https://github.com/user-attachments/assets/2c9c9587-ca94-48f7-a298-7972ce66f74a" />
 ---
 
